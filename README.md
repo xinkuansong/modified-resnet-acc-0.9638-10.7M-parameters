@@ -23,6 +23,10 @@ Secondly, no bottleneck architecture in modified residual block, no increasing n
 #### Model implementation
 
 Model implemented in keras with tensorflow backend.
+Model architecture:
+   depth: 76
+   number of parameters: 10.73M
+Datasets: cifar10+
 Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1 and consine decay of stage2.
 
 ### Results
@@ -32,4 +36,4 @@ Learning rate schedule: the training process of modified residual network was se
 The final validation accuracy is 0.9638. (Three times maximum: 0.9644, mean: 0.9634)
 
 ### Connection:
-Any problems can connect me through: (sxk_ml@163.com)
+Any problems please connect me through: sxk_ml@163.com
