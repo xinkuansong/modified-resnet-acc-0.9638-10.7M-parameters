@@ -20,20 +20,23 @@ The shortcut connection between bn of former block and relu activation of curren
 ![Modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/modified%20residual%20block.PNG)
 Secondly, no bottleneck architecture in modified residual block, no increasing number of feature maps after each time shrinking feature map size.
 
-#### Model implementation
+#### Model implementation and training details
 
 Model implemented in keras with tensorflow backend.  
 Model architecture:  
    depth: 76  
    number of parameters: 10.73M  
 Datasets: cifar10+  
-Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1 and consine decay of stage2.
+Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1(240 epochs) and consine decay of stage2(150 epochs).
 
 ### Results
+Learning rate schedule of two training stages:
 ![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/lr.png)
-![Train and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/loss.png)
-![Train and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/acc.png)
+Training and validation loss: 
+![Training and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/loss.png)
+Training and validation accuracy: 
+![Training and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/acc.png)
 The final validation accuracy is 0.9638. (Three times maximum: 0.9644, mean: 0.9634)
 
 ### Connection:
-Any problems please connect me through: sxk_ml@163.com
+You can connect me through: sxk_ml@163.com
