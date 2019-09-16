@@ -16,4 +16,7 @@ This repository contains the original modified residual network which modified t
 #### Model disciption
 Firstly, the modified residual network introduces filtering mechanism in the basic residual block. 
 ![Residual block Vs modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/residual%20block%20VS%20modified%20residual%20block.PNG)
-
+![Modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/modified%20residual%20block.PNG)
+![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/lr.png)
+![Train and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/acc.png)
+![Train and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/loss.png)
