@@ -16,9 +16,9 @@ This repository contains the original modified residual network which modified t
 #### Model disciption
 Firstly, the modified residual network introduces filtering mechanism in the basic residual block. Comparing to original residual block, shortcut connection was introduced just after the relu activation and an additional batch normalization was added after the shortcut connetction. See in the following image.
 ![Residual block Vs modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/residual%20block%20VS%20modified%20residual%20block.PNG)
-The shortcut connection between bn of former block and relu activation of current block functioned as filtering mechanism, it can determine which part of features should be emphasized and which part of features should not to be. Detail illustration of modified residual block. 
+The shortcut connection between bn of former block and relu activation of current block functioned as filtering mechanism, it can determine which part of features should be emphasized and which part of features should not to be. Detail illustration of modified residual block below. 
 ![Modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/modified%20residual%20block.PNG)
-Secondly, no bottleneck architecture in modified residual block, no increasing number of feature maps after each time shrinking feature map size.
+Secondly, no bottleneck architecture and no doubling number of feature maps after each time shrinking feature map size in modified residual block.
 
 #### Model implementation and training details
 
