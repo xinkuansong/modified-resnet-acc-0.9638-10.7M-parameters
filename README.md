@@ -22,11 +22,11 @@ Secondly, no bottleneck architecture in modified residual block, no increasing n
 
 #### Model implementation
 
-Model implemented in keras with tensorflow backend.
-Model architecture:
-   depth: 76
-   number of parameters: 10.73M
-Datasets: cifar10+
+Model implemented in keras with tensorflow backend.  
+Model architecture:  
+   depth: 76  
+   number of parameters: 10.73M  
+Datasets: cifar10+  
 Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1 and consine decay of stage2.
 
 ### Results
