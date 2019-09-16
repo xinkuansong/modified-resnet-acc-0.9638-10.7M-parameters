@@ -11,12 +11,25 @@ By Song xinkuan.
 
 This repository contains the original modified residual network which modified the classical resnet "Deep Residual Learning for Image Recognition" (http://arxiv.org/abs/1512.03385). Original residual block was modified to improve model performance. 
 
-### Model Discription, Implementation, and Training Details
+### Model Discription and Implementation
 
 #### Model disciption
-Firstly, the modified residual network introduces filtering mechanism in the basic residual block. 
-![Residual block Vs modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/residual%20block%20VS%20modified%20residual%20block.PNG)
-![Modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/modified%20residual%20block.PNG)
-![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/lr.png)
-![Train and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/acc.png)
-![Train and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/loss.png)
+Firstly, the modified residual network introduces filtering mechanism in the basic residual block. Comparing to original residual block, shortcut connection was introduced just after the relu activation and an additional batch normalization was added after the shortcut connetction. See in the following image.
+![Residual block Vs modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/residual%20block%20VS%20modified%20residual%20block.PNG)
+The shortcut connection between bn of former block and relu activation of current block functioned as filtering mechanism, it can determine which part of features should be emphasized and which part of features should not to be. Detail illustration of modified residual block. 
+![Modified residual block](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/modified%20residual%20block.PNG)
+Secondly, no bottleneck architecture in modified residual block, no increasing number of feature maps after each time shrinking feature map size.
+
+#### Model implementation
+
+Model implemented in keras with tensorflow backend.
+Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1 and consine decay of stage2.
+
+### Results
+![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/lr.png)
+![Train and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/loss.png)
+![Train and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/acc.png)
+The final validation accuracy is 0.9638. (Three times maximum: 0.9644, mean: 0.9634)
+
+### Connection:
+Any problems can connect me through: (sxk_ml@163.com)
