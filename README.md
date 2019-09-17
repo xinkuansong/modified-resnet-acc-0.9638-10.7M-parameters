@@ -26,8 +26,8 @@ Model implemented in keras with tensorflow backend.
 Depth: 76  
 Number of parameters: 10.73M  
 Datasets: cifar10+  
-Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1(240 epochs) and consine decay of stage2(150 epochs).
-Equipment: Single NVDIA 1080Ti
+Learning rate schedule: the training process of modified residual network was separated into two stages, including stepwise decay of stage1(240 epochs) and consine decay of stage2(150 epochs)  
+Equipment: Single NVDIA 1080Ti  
 ### Results
 Learning rate schedule of two training stages:
 ![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/lr.png)
