@@ -30,7 +30,7 @@ Learning rate schedule: the training process of modified residual network was se
 Equipment: Single NVDIA 1080Ti  
 ### Results
 Learning rate schedule of two training stages:
-![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/lr.png)
+![Learning rate schedule](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/lr_log.png)
 Training and validation loss: 
 ![Training and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/loss.png)
 Training and validation accuracy: 
