@@ -35,7 +35,7 @@ Training and validation loss:
 ![Training and validation loss](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/loss.png)
 Training and validation accuracy: 
 ![Training and validation accuracy](https://github.com/xinkuansong/modified-resnet-acc-0.9638-10.7M-parameters/blob/master/images/acc.png)
-The final validation accuracy is 0.9638. (Three times maximum: 0.9644, mean: 0.9634)
+The final validation accuracy is 96.38%. (Three times maximum: 96.44%, mean: 96.34%)
 
 ### Connection:
 You can connect me through: sxk_ml@163.com
